@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+audio {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+section {
+    max-width: 1366px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.elem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 15px; ;
+}
+.elem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.elem:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: .5s;
+    max-height: 120px;
+    height: 100%;
+}
+.elem:hover img {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+h3, h4 {
+    transition: .5s;
+}
+.elem:hover h3 {
+   color: orange; 
+}
+.elem:hover h4 {
+    color: orange;   
+}
+#blocked {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.9);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#window {
+    width: 450px;
+    height: 250px;
+    background: #fff;
+    position: relative; 
+}
+#close {
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.app {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(28, 28, 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 400px;
+    min-height: 85vh;
+    background: #000;
+    color: #fff;
+}
+header {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+#open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-right: 20px;
+}
+input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: none;
+    width: 80%;
+    height: 30px;
+    outline: none;
+}
+.wrapper-player {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+#player {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.orange-btn {
+    width: 30px;
+    height: 30px;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+#stop-play {
+    width: 50px;
+    height: 50px;
+}
+section {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column ;
+}
+.elem.text {
+    margin-left: 10px;
+}
